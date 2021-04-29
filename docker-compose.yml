@@ -1,3 +1,19 @@
+﻿#Infrastructure and Cloud Computing
+#Professor: João Henrique Victorino da Silva
+#Aluno: Vinicius Miranda Lopes Schulz
+#Atividade 1
+#Descrição: Subir dois contêineres, nginx e mysql, mapeando a porta 80 do nginx para acesso pelo host e permitir que o contêiner do nginx tenha comunicação de rede no container mysql. Enviar sequência de comandos na linha de comando ou o Docker-compose com os arquivos necessários para que a solução funcione.
+#========================================================================================================================================
+#Passos para subir o ambiente descrito neste arquivo
+# 1.    Tenha o docker e docker-compose instalado na máquina
+# 2.    Pela linha de comando, navegue até o diretório onde está localizado este arquivo
+# 3.    Execute o comando 'docker-compose up -d' e aguarde o processo finalizar
+# 3.1.      O comando docker-compose chama o programa docker-compose instalado na máquina
+# 3.2.      O comando up sobe os conteiners e rede, respeitando as dependencias impostas no arquivo
+# 3.3.      O comando -d sobe os containers em modo deamon para liberar o console
+# 4.    Teste a aplicação nginx que subiu no container a partir da imagem nginx:1.19.3-alpine pelo navegador, digitando: http://localhost
+# 5.    Execute o comando 'docker-compose down' para parar e remover todos os containers e rede
+
 version: "3.2"
 services:
     nginx:
